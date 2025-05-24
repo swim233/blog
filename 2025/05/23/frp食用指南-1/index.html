@@ -288,7 +288,7 @@
 <blockquote>
 <p>注意 <code>remotePort</code>字段为<code>tcp</code>和<code>udp</code>模式独有 在使用其他模式的时候不用填写该字段</p>
 </blockquote>
-<p>现在 我们还需要启动上文编写好的<code>frps</code>的服务 此时 我们便可以通过访问<code>公网IP:8080</code>来实现访问部署在内网<code>80</code>端口的服务了</p>
+<p>现在 我们还需要启动上文配置好的<code>frps</code>的服务 此时 我们便可以通过访问<code>公网IP:8080</code>来实现访问部署在内网<code>80</code>端口的服务了</p>
 <h3 id="stcp-sudp-xtcp模式配置"><a href="#stcp-sudp-xtcp模式配置" class="headerlink" title="stcp&#x2F;sudp&#x2F;xtcp模式配置"></a>stcp&#x2F;sudp&#x2F;xtcp模式配置</h3><p>这三种模式中 所使用的模式为<code>Client-Server-Client</code> 即以服务器作为中转 转发<code>proxies</code>与<code>visitor</code>之间的流量 前两种使用较少 因为他们需要在两个客户端都开启<code>frpc</code>客户端</p>
 <p>第三个比较特殊 <code>xtcp</code>就是人们常说的打洞 如果打洞成功 流量就<strong>不再需要</strong>经过服务器进行中转了 这里先介绍<code>stcp</code>和<code>sudp</code></p>
 <p>再举个栗子 电脑A的<code>80</code>端口运行者一个服务 我需要在电脑B的<code>8080</code>端口访问他 此时</p>
@@ -357,7 +357,7 @@
 <p>更多参数 详见 <a target="_blank" rel="noopener" href="https://gofrp.org/zh-cn/docs/reference/visitor/#visitortransport">https://gofrp.org/zh-cn/docs/reference/visitor/#visitortransport</a></p>
 <p>此时 我们便完成了<code>frp</code>基本的配置 这里的部分可以满足大部分用户的需求 至于其他没有讲到的部分 感兴趣可以自行查阅文档 <del>有机会可能还会再写一篇来讲一下 摸了</del></p>
 <hr>
-<h2 id="尾声"><a href="#尾声" class="headerlink" title="尾声"></a>尾声</h2><p>写这篇文章的初衷是最近在折腾frp 过程中踩了许多的坑 于是借此机会来写一篇blog 锻炼<del>练手</del>的同时 也希望能帮助到在学习使用frp的时候遇到困难的同学 希望本文对你有帮助</p>
+<h2 id="尾声"><a href="#尾声" class="headerlink" title="尾声"></a>尾声</h2><p>写这篇文章的初衷是最近在折腾frp 过程中踩了许多的坑 于是借此机会来写一篇blog 锻炼<del>练手</del>的同时 也希望能帮助到在学习使用frp的时候遇到困难的同学 如果本文对你有帮助 不妨转发给身边需要类似服务的朋友 感谢您的分享</p>
 <p>同时 如果文中有错误或疏漏的地方 也希望大家能在评论区中指出 感谢各位的支持~</p>
 <p>特别鸣谢 <a target="_blank" rel="noopener" href="https://blog.sakurakooi.dev/">@SakuraKooi</a> 对本文的大力支持</p>
 
