@@ -311,7 +311,7 @@
 <span class="token punctuation">[</span><span class="token punctuation">[</span><span class="token table class-name">visitors</span><span class="token punctuation">]</span><span class="token punctuation">]</span>
 <span class="token key property">name</span> <span class="token punctuation">=</span> <span class="token string">"NAME"</span> <span class="token comment">#这里要和 proxies 中的name相同</span>
 <span class="token key property">type</span> <span class="token punctuation">=</span> <span class="token string">"stcp/sudp"</span> <span class="token comment">#同上</span>
-<span class="token key property">bindIP</span> <span class="token punctuation">=</span> <span class="token string">"127.0.0.1"</span> <span class="token comment">#如无特殊要求 保持为127.0.0.1即可</span>
+<span class="token key property">bindAddr</span> <span class="token punctuation">=</span> <span class="token string">"127.0.0.1"</span> <span class="token comment">#如无特殊要求 保持为127.0.0.1即可</span>
 <span class="token key property">bindPort</span> <span class="token punctuation">=</span> <span class="token number">8080</span> <span class="token comment">#此处为你需要在frpc的visitors端 即访问者使用的端口</span>
 <span class="token key property">secretKey</span> <span class="token punctuation">=</span> <span class="token string">"Keys"</span> <span class="token comment">#可选 stcp/sudp的密钥 如果设置了该值 proxies中密钥需要与此处一致</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <blockquote>
@@ -342,7 +342,7 @@
 <span class="token punctuation">[</span><span class="token punctuation">[</span><span class="token table class-name">visitors</span><span class="token punctuation">]</span><span class="token punctuation">]</span>
 <span class="token key property">name</span> <span class="token punctuation">=</span> <span class="token string">"NAME"</span> <span class="token comment">#这里要和 proxies 中的name相同</span>
 <span class="token key property">type</span> <span class="token punctuation">=</span> <span class="token string">"xtcp"</span>
-<span class="token key property">bindIP</span> <span class="token punctuation">=</span> <span class="token string">"127.0.0.1"</span> <span class="token comment">#如无特殊要求 保持为127.0.0.1即可</span>
+<span class="token key property">bindAddr</span> <span class="token punctuation">=</span> <span class="token string">"127.0.0.1"</span> <span class="token comment">#如无特殊要求 保持为127.0.0.1即可</span>
 <span class="token key property">bindPort</span> <span class="token punctuation">=</span> <span class="token number">8080</span> <span class="token comment">#此处为你需要在frpc的visitors端 即访问者使用的端口</span>
 <span class="token key property">secretKey</span> <span class="token punctuation">=</span> <span class="token string">"Keys"</span> <span class="token comment">#可选 xtcp的密钥 如果设置了该值 proxies中密钥需要与此处一致</span>
 <span class="token key property">protocol</span> <span class="token punctuation">=</span> <span class="token string">"quic/kcp"</span> <span class="token comment">#可选 默认为quic</span>
